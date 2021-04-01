@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
-.header {
+body {
+  display: grid;
+  grid-template:
+    "header header " 100px
+    "left-menu main " auto /
+    1fr 2fr;
+  place-items: center;
+}
+
+header {
+  grid-area: header;
   display: grid;
   grid-template:
     "Main-title navbar" 100px /
-    1fr 1fr;
+    50vw 50vw;
   place-items: center;
 }
 
@@ -18,5 +28,25 @@
 
 .navbar {
   grid-area: navbar;
+  padding: 40px 280px;
+}
+
+.navbar li {
   display: inline;
+}
+
+aside {
+  grid-area: left-menu;
+}
+
+.picture {
+  margin-bottom: 60px;
+}
+
+.Link-heading {
+  text-align: center;
+}
+
+main {
+  grid-area: main;
 }
