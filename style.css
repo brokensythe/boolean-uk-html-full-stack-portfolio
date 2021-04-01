@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template:
+    "Main-title navbar" 100px /
+    1fr 1fr;
+  place-items: center;
+}
+
+.Main-title {
+  grid-area: Main-title;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: inline;
+}
