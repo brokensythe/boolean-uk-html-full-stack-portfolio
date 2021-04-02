@@ -18,17 +18,25 @@ header {
   display: grid;
   grid-template:
     "Main-title navbar" 100px /
-    50vw 50vw;
-  place-items: center;
+    15vw 85vw;
+  align-items: center;
 }
 
-.Main-title {
+h1 {
   grid-area: Main-title;
+  padding-left: 25px;
 }
 
 .navbar {
   grid-area: navbar;
-  padding: 40px 280px;
+}
+
+.navbar-list {
+  display: grid;
+  grid-template:
+    "testimonies pricing hire-me " auto /
+    auto auto auto;
+  place-items: center;
 }
 
 .navbar li {
@@ -45,6 +53,10 @@ aside {
 
 .Link-heading {
   text-align: center;
+}
+
+.CodeSandbox-logo {
+  background-color: #000;
 }
 
 main {
