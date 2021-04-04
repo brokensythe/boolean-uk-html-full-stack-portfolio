@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     "left-menu main " auto /
     1fr 2fr;
   place-items: center;
+  background-color: #f5d6ba;
 }
 
 header {
@@ -20,15 +22,31 @@ header {
     "Main-title navbar" 100px /
     15vw 85vw;
   align-items: center;
+  background-color: #00f6ee59;
 }
 
 h1 {
   grid-area: Main-title;
   padding-left: 25px;
+  font-size: 3.5em;
+  text-shadow: 10px -5px 2px #2e2e2e71;
+  letter-spacing: -21px;
+  width: 60px;
+  height: 63px;
+}
+
+.Title {
+  color: #472b17;
+}
+
+.Title:hover {
+  color: #47474776;
 }
 
 .navbar {
   grid-area: navbar;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.3em;
 }
 
 .navbar-list {
@@ -39,26 +57,110 @@ h1 {
   place-items: center;
 }
 
+.navbar a {
+  color: #856084;
+}
+
 .navbar li {
   display: inline;
+  text-shadow: 1px -2px #a40e4c;
+}
+
+.navbar li:hover {
+  text-decoration: wavy underline #856084;
 }
 
 aside {
   grid-area: left-menu;
+  background-color: #e83077;
+  border: 8px inset #a0e2cc;
+  padding: 13px;
+  margin-top: 70px;
 }
 
 .picture {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
-.Link-heading {
-  text-align: center;
+.picture img {
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.link-list {
+  display: grid;
+  grid-template:
+    "CodeSandbox-logo GitHub-logo" 40px /
+    50% 50%;
+  place-items: center;
+  margin-bottom: 40px;
+}
+
+.link-list li {
+  display: inline;
 }
 
 .CodeSandbox-logo {
-  background-color: #000;
+  background-color: none;
+}
+
+.bio {
+  text-align: center;
+}
+
+h3.bio {
+  margin-bottom: 8px;
 }
 
 main {
   grid-area: main;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+}
+
+.page-navigation {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-navigation li {
+  display: inline;
+  font-family: Papyrus, fantasy;
+}
+
+.page-navigation li:hover {
+  font-weight: bold;
+}
+
+.page-navigation a {
+  color: #8a4b14;
+}
+
+.page-opening {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.project-1 {
+  margin-top: 70px;
+}
+
+.project-2 {
+  margin-top: 30px;
+}
+
+section {
+  text-align: center;
+}
+
+.back-to-top-link {
+  position: sticky;
+  bottom: 25px;
+  right: 92%;
+  border: 1px solid black;
+  padding: 8px;
+  color: #fff;
+  background-color: #000;
 }
