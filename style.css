@@ -87,6 +87,11 @@ aside {
   height: 100%;
 }
 
+.picture {
+  display: grid;
+  place-items: center;
+}
+
 div img {
   border: 2px solid black;
   border-radius: 100%;
