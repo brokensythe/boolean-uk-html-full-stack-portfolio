@@ -87,15 +87,10 @@ aside {
   height: 100%;
 }
 
-.picture {
-  margin-bottom: 10px;
-  display: grid;
-  place-items: center;
-}
-
-.picture img {
+div img {
   border: 2px solid black;
   border-radius: 100%;
+  margin-bottom: 10px;
 }
 
 .link-list {
@@ -125,7 +120,7 @@ h3.bio {
 
 aside div {
   position: sticky;
-  top: 1px;
+  top: 0px;
 }
 
 main {
